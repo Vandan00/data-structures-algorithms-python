@@ -28,6 +28,7 @@ def produce_binary_numbers(n):
     numbers_queue.enqueue("1")
 
     for i in range(n):
+#         Using Up Extra Space. Maybe this exercise is not that appropriate.
         front = numbers_queue.front()
         print("   ", front)
         numbers_queue.enqueue(front + "0")
